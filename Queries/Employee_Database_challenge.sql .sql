@@ -1,4 +1,5 @@
 -- Deliverable 1: Number of retiring employees by titles 
+
 DROP TABLE IF EXISTS retirement_titles;
 SELECT e.emp_no,
 	e.first_name,
@@ -23,4 +24,9 @@ FROM retirement_titles as rt
 ORDER BY rt.emp_no, 
 	rt.to_date DESC
 
-    
+-- Retrieve number of titles from Unique Titles table into Retiring Titles table
+SELECT COUNT(ut.title), ut.title
+INTO retiring_titles
+FROM unique_titles as ut
+GROUP BY ut.title 
+ORDER BY COUNT(*) DESC;
