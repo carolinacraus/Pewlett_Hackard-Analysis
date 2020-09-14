@@ -28,6 +28,7 @@ The ERD Schema used to build queries
   - [mentorship eligible employees](Data/mentorship_eligibility.csv)
 - Number of employees eligible for mentorship by title 
   ![Mentorship eligible employees by title](Resources/mentorship_by_title.png)
-
 ## Summary
-- 
+- There are not enough qualified, retirement ready employees to mentor the next generation in any of the departments. 
+- There seems to be a very low number of manager positions
+- More than 30,000 roles will need to be filled when the "silver tsunami" hits 
